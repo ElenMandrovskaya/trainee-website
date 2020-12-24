@@ -1,0 +1,237 @@
+:root {
+    --primary-text-color:#212121;
+    --secondary-text-color:#333;
+    --accent-text-color:#e48bbc;
+    --reserve-text-color: #FFFFFF;
+    --primary-font-family: "Work+Sans", sans-serif;
+    --secondary-font-family: "Pacifico", sans-serif;
+    --logo-font-family: "Hammersmith+One", sans-serf;
+    --card-set-gap: 30px;
+}
+html {
+    box-sizing: border-box;
+    
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+    font-family: var(--primary-font-family);
+    color: var(--primary-text-color);
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+address {
+    font-style: normal;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.title {
+    margin-bottom: 20px;
+    color: var(--secondary-text-color);
+    font-family: var(--secondary-font-family);
+    font-size: 40px;
+}
+.wrap {
+    padding-top: 50px;
+    text-align: center;
+}
+/* --------------HEADER------------ */
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #212121;
+}
+.site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+.site-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+.site-nav__link{
+    color: var(--secondary-text-color);
+    font-weight: 700px;
+    font-size: 20px;
+    letter-spacing: 0.03em;
+    text-shadow: 0.5px 0.5px 3px rgb(124, 124, 124);
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus,
+.site-nav__link-logo:hover,
+.site-nav__link-logo:focus {
+    color: var(--accent-text-color);
+
+}
+.site-nav__link-logo {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    color: var(--secondary-text-color);
+    font-family: var(--secondary-font-family);
+    font-weight: 700px;
+    font-size: 25px;
+    letter-spacing: 0.03em;
+}
+.site-nav__logo {
+    fill: currentColor;
+}
+/* ------------HERO------------ */
+.hero {
+    position: relative;
+
+    max-width: 1600px;
+    height: 600px;
+    background-color: #7d7d7e;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+ } 
+ .hero-title {
+     position: absolute;
+     bottom: 60px;
+     right: 70px;
+     color: var(--reserve-text-color);
+     font-family: var(--secondary-font-family);
+     text-shadow: 5px 5px 6px rgb(66, 65, 65);
+     font-size: 52px;
+ }
+
+ /* --------STORY + MANUFACTURE--------- */
+ .manufacture,
+ .story,
+ .packing {
+     padding-top: 30px;
+     padding-bottom: 30px;
+     display: flex;
+ }
+
+.manufacture-desc,
+.story-desc,
+.packing-desc {
+    font-size: 16px;
+    font-style: italic;
+}
+.manufacture-img {
+    margin-left: 30px;
+}
+.story-img,
+.packing-img {
+    margin-right: 30px;
+}
+/* --------FEEDBACKS---------- */
+.feedback {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.feedback-list {
+    display: flex;
+    justify-content: space-between;
+}
+.feedback-item:not(:last-child) {
+    margin-right: 15px;
+}
+.feedback-item {
+    width: 320px;
+}
+.rate {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+}
+.rate-icon {
+    text-align: center;
+}
+.user {
+    display: inline-block;
+    border-radius: 50%;
+    
+}
+.user-name {
+    width: 100%;
+    text-align: right;
+}
+.date-review {
+    width: 100%;
+    text-align: right;
+}
+.review-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.review-header {
+    display: flex;
+    margin-bottom: 25px;
+}
+.product-link {
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+.product-name {
+    width: 200px;
+    text-align: right;
+}
+.review-text {
+    margin-bottom: 15px;
+}
+.thumb {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+}
