@@ -1,5 +1,5 @@
 :root {
-    --primary-text-color:#212121;
+    --primary-text-color:#756c6c;
     --secondary-text-color:#333;
     --accent-text-color:#e48bbc;
     --reserve-text-color: #FFFFFF;
@@ -65,7 +65,7 @@ img {
     overflow: hidden;
 }
 .title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: var(--secondary-text-color);
     font-family: var(--secondary-font-family);
     font-size: 40px;
@@ -73,6 +73,22 @@ img {
 .wrap {
     padding-top: 50px;
     text-align: center;
+}
+.btn {
+    display: block;
+    margin: 0 auto;
+    padding: 8px 0;
+    min-width: 150px;
+    min-height: 30px;
+    border-radius: 4px;
+    border: 1px solid var(--accent-text-color);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    color: var(--reserve-text-color);
+    background-color: var(--accent-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* --------------HEADER------------ */
 
@@ -95,17 +111,22 @@ img {
     margin-right: 50px;
 }
 .site-nav__link{
-    color: var(--secondary-text-color);
-    font-weight: 700px;
-    font-size: 20px;
+    color: #756c6c;
+    font-family: var(--secondary-font-family);
+    font-weight: 400px;
+    font-size: 24px;
     letter-spacing: 0.03em;
-    text-shadow: 0.5px 0.5px 3px rgb(124, 124, 124);
+    text-shadow: 0.5px 0.5px 1px rgb(124, 124, 124);
 }
 
 .site-nav__link:hover,
 .site-nav__link:focus,
 .site-nav__link-logo:hover,
-.site-nav__link-logo:focus {
+.site-nav__link-logo:focus,
+.footer__link-logo:hover,
+.footer__link-logo:focus,
+.footer-social__link:hover,
+.footer-social__link:focus {
     color: var(--accent-text-color);
 
 }
@@ -119,7 +140,8 @@ img {
     font-size: 25px;
     letter-spacing: 0.03em;
 }
-.site-nav__logo {
+.site-nav__logo,
+.footer__logo {
     fill: currentColor;
 }
 /* ------------HERO------------ */
@@ -185,6 +207,8 @@ img {
     margin-right: 15px;
 }
 .feedback-item {
+    position: relative;
+
     width: 320px;
 }
 .rate {
@@ -204,10 +228,14 @@ img {
 .user-name {
     width: 100%;
     text-align: right;
+    text-decoration: underline;
+    color: var(--secondary-text-color);
 }
 .date-review {
     width: 100%;
     text-align: right;
+    font-style: italic;
+    font-size: 10px;
 }
 .review-info {
     display: flex;
@@ -217,21 +245,90 @@ img {
 
 .review-header {
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 }
 .product-link {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+
     display: flex;
     justify-content: space-between;
-    height: 70px;
+    height: 60px;
 }
 .product-name {
-    width: 200px;
-    text-align: right;
+    width: 150px;
+    text-align: left;
+    margin-left: 15px;
+    font-size: 15px;
 }
 .review-text {
+    height: 280px;
     margin-bottom: 15px;
+    font-style: italic;
+    font-size: 14px;
 }
 .thumb {
-    padding: 20px 24px;
+    padding: 15px 15px;
     border: 1px solid #eeeeee;
+    border-radius: 4px;
+}
+/* -----------FOOTER------------- */
+.footer {
+    background-color: #686464;
+    height: 250px;
+    color: var(--reserve-text-color);
+    font-family: var(--secondary-font-family);
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #212121;
+    padding-top: 50px;
+}
+
+.footer-social__list {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-social__link {
+    color: var(--reserve-text-color);
+}
+.social-logo {
+    fill: currentColor;
+}
+.footer__link-logo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    color: var(--reserve-text-color);
+    font-family: var(--secondary-font-family);
+    font-weight: 700px;
+    font-size: 30px;
+    letter-spacing: 0.03em;
+}
+.form-label {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+
+.form-field {
+    background-color: transparent;
+    margin-top: 10px;
+    font-size: 12px;
+    width: 485px;
+    height: 60px;
+    resize: none;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    outline: none;
+}
+.form-label > .btn {
+    margin-top: 10px;
 }
